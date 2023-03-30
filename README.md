@@ -3,8 +3,8 @@
 This base application of all RW UI samples is a clone of [rw-minimal-app](https://github.com/adriatic/rw-minimal-app) created using CLI commands from the [Starting Development](https://redwoodjs.com/docs/tutorial/chapter1/installation) tutorial document:
 
 ```
-yarn create redwood-app --ts ./minimal-application
-cd minimal-application
+yarn create redwood-app --ts ./rw-minimal-app
+cd rw-minimal-app
 
 yarn rw dev
 yarn redwood generate page home /
@@ -34,18 +34,17 @@ and
 ```
 import { MetaTags } from '@redwoodjs/web'
 
-const HomePage = () => {
+const AboutPage = () => {
   return (
     <>
-      <MetaTags title="Home" description="Home page" />
+      <MetaTags title="About" description="About page" />
 
-      <h1>Home Page</h1>
+      <h1>About Page</h1>
     </>
   )
 }
 
-export default HomePage
-
+export default AboutPage
 ```
 
 Note that we removed nearly everything from these two pages as all the content and navigation will be created by all supported UI libraries:
